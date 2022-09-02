@@ -1,10 +1,6 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: tonyodell/rakudo-nightly:latest
-
-    working_directory: ~
 
     steps:
       - checkout
