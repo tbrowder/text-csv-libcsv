@@ -1,0 +1,18 @@
+# basic Raku setup
+# License: MIT
+
+jobs:
+  raku:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: Raku/setup-raku@v1  # By default, this sets up the latest rakudo
+      - name: Install needed packages
+        run: sudo apt-get install -y libcsv-dev
+      - name: Install Dependencies
+        run: zef install --/test --test-depends --deps-only .
+      - name: Install App::Prove6
+        run: zef install --/test App::Prove6
+      - name: Run Tests
+        run: prove6 -l t
+
