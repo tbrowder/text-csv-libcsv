@@ -1,4 +1,4 @@
-#! /usr/bin/env perl6
+#! /usr/bin/env aku
 #Note `zef build .` will run this script
 use v6;
 
@@ -27,7 +27,7 @@ class Build {
     }
 }
 
-# Build.pm can also be run standalone
+# Build.rakudoc can also be run standalone
 sub MAIN(Str $working-directory = '.' ) {
     Build.new.build($working-directory);
     exit 0;

@@ -1,5 +1,3 @@
-[![Actions Status](https://github.com/tbrowder/text-csv-libcsv/actions/workflows/test.yml/badge.svg)](https://github.com/tbrowder/text-csv-libcsv/actions)
-
 # Text::CSV::LibCSV
 
 Uses a wrapper that can stream data/records from a csv file using libcsv.
