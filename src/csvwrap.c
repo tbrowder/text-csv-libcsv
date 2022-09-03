@@ -1,7 +1,7 @@
 #include <csv.h>
 #include <stdio.h>
 
-struct csv_parser* csv_create_parser_x(int options) {
+struct csv_parser* csv_create_parser_x(int32_t options) {
   struct csv_parser *p = (struct csv_parser*)malloc(sizeof(struct csv_parser));
   csv_init(p, options);
   return p;
