@@ -17,11 +17,11 @@ jobs:
           - "2019.11"
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: Raku/setup-raku@v1
         with:
           raku-version: ${{ matrix.raku-version }}
-      - run: raku -v # <= use or delete this
+        run: exit 0
 
       # add commands below for your own requirements
 
