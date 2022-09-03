@@ -21,7 +21,7 @@ jobs:
       - uses: Raku/setup-raku@v1
         with:
           raku-version: ${{ matrix.raku-version }}
-        run: exit 0
+        run: exit(0)
 
       # add commands below for your own requirements
 
