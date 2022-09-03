@@ -13,8 +13,8 @@
   "name": "Text::CSV::LibCSV",
   "perl": "6.*",
   "provides": {
-    "Text::CSV::LibCSV": "lib/Text/CSV/LibCSV.pm6",
-    "Text::CSV::LibCSV::Native": "lib/Text/CSV/LibCSV/Native.pm6"
+    "Text::CSV::LibCSV": "lib/Text/CSV/LibCSV.rakumod",
+    "Text::CSV::LibCSV::Native": "lib/Text/CSV/LibCSV/Native.rakumod"
   },
   "resources": [
     "lib/libcsvwrap.so",
