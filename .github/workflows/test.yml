@@ -1,11 +1,12 @@
 # basic Raku setup
 # License: MIT
+name: test
 
 jobs:
   raku:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: Raku/setup-raku@v1  # By default, this sets up the latest rakudo
       - name: Install needed packages
         run: sudo apt-get install -y libcsv-dev
