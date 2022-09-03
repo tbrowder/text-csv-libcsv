@@ -18,3 +18,5 @@ clean :
 
 realclean : clean
 	@rm -f Makefile
+	@rm -f $(SRC)/*.so*
+	@rm -f resources/lib/libcsvwrap.*
