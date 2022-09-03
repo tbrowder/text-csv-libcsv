@@ -1,5 +1,5 @@
 #! /usr/bin/env aku
-#Note `zef build .` will run this script
+# Note `zef build .` will run this script
 use v6;
 
 class Build {
