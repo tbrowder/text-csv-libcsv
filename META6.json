@@ -1,20 +1,18 @@
 {
-  "auth": "zef:tony-o",
-  "authors": [
-    "tony-o"
-  ],
-  "build-depends": [
-    "LibraryMake"
-  ],
-  "depends": [
-  ],
-  "description": "libcsv wrapper + Parser",
-  "license": "NOASSERTION",
-  "name": "Text::CSV::LibCSV",
-  "perl": "6.*",
-  "provides": {
-    "Text::CSV::LibCSV": "lib/Text/CSV/LibCSV.rakumod",
-    "Text::CSV::LibCSV::Native": "lib/Text/CSV/LibCSV/Native.rakumod"
+  "authors"       : [ "tony-o" ],
+  "perl"          : "6.*",
+  "name"          : "Text::CSV::LibCSV",
+  "tags"          : [ "csv", "parser", "native" ], 
+  "version"       : "0.0.3",
+  "auth"          : "zef:tony-o",
+  "description"   : "libcsv wrapper + Parser",
+  "source-url"    : "git://github.com/tony-o/perl6-libcsv.git",
+  "depends"       : [ ],
+  "build-depends" : [ "LibraryMake" ],
+  "test-depends"  : [ ],
+  "provides"      : {
+    "Text::CSV::LibCSV": "lib/Text/CSV/LibCSV.pm6",
+    "Text::CSV::LibCSV::Native": "lib/Text/CSV/LibCSV/Native.pm6"
   },
   "resources": [
     "lib/libcsvwrap.so",
